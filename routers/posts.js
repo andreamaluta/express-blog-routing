@@ -21,6 +21,9 @@ router.put('/:id', (req, res) => {
     res.send('Modifica totale del post: ' +req.params.id);
 })
 
-
+// destroy
+router.delete('/:id', (req, res) => {
+    res.send("eliminazione dell'elemento: " + req.params.id);
+})
 
 module.exports = router;
