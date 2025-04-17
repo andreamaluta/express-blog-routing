@@ -16,4 +16,11 @@ router.post('/', (req, res) => {
     res.send('Inserimento di un post');
 })
 
+// update
+router.put('/:id', (req, res) => {
+    res.send('Modifica totale del post: ' +req.params.id);
+})
+
+
+
 module.exports = router;
